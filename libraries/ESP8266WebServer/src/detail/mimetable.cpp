@@ -6,11 +6,15 @@ namespace mime
 {
 
 static const char kHtmlSuffix[] PROGMEM = ".html";
+static const char kHtmlGzSuffix[] PROGMEM = ".html.gz";
 static const char kHtmSuffix[] PROGMEM = ".htm";
+static const char kHtmGzSuffix[] PROGMEM = ".htm.gz";
 static const char kTxtSuffix[] PROGMEM = ".txt";
 #ifndef MIMETYPE_MINIMAL
 static const char kCssSuffix[] PROGMEM = ".css";
+static const char kCssGzSuffix[] PROGMEM = ".css.gz";
 static const char kJsSuffix[] PROGMEM = ".js";
+static const char kJsGzSuffix[] PROGMEM = ".js.gz";
 static const char kJsonSuffix[] PROGMEM = ".json";
 static const char kPngSuffix[] PROGMEM = ".png";
 static const char kGifSuffix[] PROGMEM = ".gif";
@@ -61,11 +65,15 @@ static const char kDefault[] PROGMEM = "application/octet-stream";
 const Entry mimeTable[maxType] PROGMEM =
 {
     { kHtmlSuffix, kHtml },
+    { kHtmlGzSuffix, kHtml },
     { kHtmSuffix, kHtml },
+    { kHtmGzSuffix, kHtml },
     { kTxtSuffix, kTxtSuffix },
 #ifndef MIMETYPE_MINIMAL
     { kCssSuffix, kCss },
+    { kCssGzSuffix, kCss },
     { kJsSuffix, kJs },
+    { kJsGzSuffix, kJs },
     { kJsonSuffix, kJson },
     { kPngSuffix, kPng },
     { kGifSuffix, kGif },

@@ -9,11 +9,15 @@ namespace mime
 enum type
 {
   html,
+  htmlgz,
   htm,
+  htmgz,
   txt,
 #ifndef MIMETYPE_MINIMAL    // allow to compile with only the strict minimum of mime-types
   css,
+  cssgz,
   js,
+  jsgz,
   json,
   png,
   gif,
