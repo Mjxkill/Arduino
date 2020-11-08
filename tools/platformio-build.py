@@ -46,7 +46,7 @@ Builder.match_splitext = scons_patched_match_splitext
 env = DefaultEnvironment()
 platform = env.PioPlatform()
 
-FRAMEWORK_DIR = platform.get_package_dir("framework-arduinoespressif8266")
+FRAMEWORK_DIR = platform.get_package_dir("framework-arduinoespressif8266-mjxkill")
 assert isdir(FRAMEWORK_DIR)
 
 
